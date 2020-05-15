@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+.navbar{
+    width: 100%;
+    background: #3a59fd;
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    text-align: left;
+}
+a{
+    color: white !important;
+}
+a:hover{
+    text-decoration: none !important;
+}
+ul{
+    list-style: none;
+    margin-left: -20px;
+}
+li{
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+.user-image{
+    margin-top: 20px;
+    text-align: center;
+}
+.user-image img{
+    width: 40px;
+}
+.welcome{
+    padding-top: 20px;
+    text-align: center;
+}
+.username{
+    font-weight: bold;
+    line-height: 2;
+}
+.side-routes{
+    padding-top: 50px;
+    padding-bottom: 42.8vh;
+}
+.route{
+    padding-top: 25px;
+}
+.icon{
+    background: #497bfe;
+    width: 25px;
+    padding: 6px;
+    border-radius: 5px
+}
+.routes{
+    display: flex;
+}
+.name{
+    padding-left: 10px;
+    padding-top: 2px;
+}

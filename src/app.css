@@ -1,0 +1,19 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    line-height: 1.5;
+}
+.afterAuth{
+    display: flex;
+}
+.sidenav{
+    width: 13%;
+   max-height: 100vh;
+}
+.content{
+    background: #f8f8f8;
+    width: 100%;
+    height: 100vh;
+}
