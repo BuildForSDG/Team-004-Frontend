@@ -1,6 +1,6 @@
 import React from 'react';
 import SideNav from './components/navbar/sidenav';
-import Routes from './components/routes/smeRoutes';
+import Routes from './components/routes/routes';
 import './app.css';
 
 

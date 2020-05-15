@@ -4,12 +4,12 @@ import React, { Component } from 'react';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend
 } from 'recharts';
-import '../../styles/dashboard/dashboard.css';
-import sent from '../../static/send.svg';
-import recieved from '../../static/recieve.svg';
-import pending from '../../static/pending.svg';
-import equity from '../../static/equity.svg';
-import more from '../../static/ellipsis.svg';
+import '../../../styles/dashboard/dashboard.css';
+import sent from '../../../static/send.svg';
+import recieved from '../../../static/recieve.svg';
+import pending from '../../../static/pending.svg';
+import equity from '../../../static/equity.svg';
+import more from '../../../static/ellipsis.svg';
 
 // Dummy data for projects
 const data = [

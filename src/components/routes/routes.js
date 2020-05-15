@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Dashboard from '../dashboards/sme';
+import Dashboard from '../dashboards/sme/sme';
 
 const smeRoutes = () => (
         <Switch>
