@@ -10,7 +10,6 @@ body{
 }
 .sidenav{
     width: 13%;
-   max-height: 100vh;
 }
 .content{
     background: #f8f8f8;

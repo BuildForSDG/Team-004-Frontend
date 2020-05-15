@@ -6,9 +6,10 @@ import statistic from '../../static/statistics.svg';
 import project from '../../static/project.svg';
 import notification from '../../static/alarm.svg';
 import settings from '../../static/settings.svg';
+import logout from '../../static/logout.svg';
 
 const SideNav = () => (
-    <div className = "navbar">
+    <div className = "side-nav">
         <ul>
             <li>
                 <div className='user-image'>
@@ -40,6 +41,11 @@ const SideNav = () => (
             <li className='route'>
                 <div className='routes'>
                   <img className='icon' src={settings} alt='settings-icon' /><span className='name'>Settings</span>
+                </div>
+            </li>
+            <li className='route'>
+                <div className='routes logout'>
+                  <img className='icon' src={logout} alt='logout-icon' /><span className='name'>Log out</span>
                 </div>
             </li>
             </div>

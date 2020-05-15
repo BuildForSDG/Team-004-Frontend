@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
-.navbar{
+.side-nav{
     width: 100%;
+    height: 100vh;
     background: #3a59fd;
     font-family: 'Oxygen', sans-serif;
     color: white;
@@ -23,15 +24,14 @@ li{
     font-weight: bold;
 }
 .user-image{
-    margin-top: 20px;
-    text-align: center;
+    padding-top: 20px;
+
 }
 .user-image img{
     width: 40px;
 }
 .welcome{
     padding-top: 20px;
-    text-align: center;
 }
 .username{
     font-weight: bold;
@@ -39,7 +39,6 @@ li{
 }
 .side-routes{
     padding-top: 50px;
-    padding-bottom: 42.8vh;
 }
 .route{
     padding-top: 25px;
@@ -56,4 +55,8 @@ li{
 .name{
     padding-left: 10px;
     padding-top: 2px;
+}
+.logout{
+    position: absolute;
+    bottom: 50px;
 }
