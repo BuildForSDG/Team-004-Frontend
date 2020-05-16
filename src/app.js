@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='App'>
       {/* Check css file for app  */}
-      <div className='afterAuth'>
+      <div className='ifAuth'>
        <div className='sidenav'>
          <SideNav />
        </div>
