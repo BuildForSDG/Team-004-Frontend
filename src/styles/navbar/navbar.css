@@ -9,12 +9,13 @@
   text-align: left;
 }
 
-a {
-  color: white !important;
+.side-nav a {
+  color: white;
 }
 
-a:hover {
-  text-decoration: none !important;
+.side-nav a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 ul {
