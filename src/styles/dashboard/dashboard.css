@@ -1,228 +1,275 @@
-.dashboard{
-    margin: 0;
-    padding: 0;
-    padding-top: 40px;
-    margin-left: 80px;
-    margin-right: 50px;
-    display: flex;
-}
-h1{
-    font-size: 20px !important;
-}
-.col-two{
-    padding-left: 30px;
-}
-.col-two .top-grid{
-    display: flex;
-    justify-content: space-between;
-}
-.col-two .middle-grid{
-    display: flex;
-}
-.col-three{
-    padding-left: 30px;
-}
-.task-overview{
-
-}
-.dash-heading{
-    font-size: 14px;
-    font-weight: bold;
+.dashboard {
+	margin: 0;
+	padding: 0;
+	padding-top: 40px;
+	margin-left: 80px;
+	margin-right: 50px;
+	display: flex;
 }
 
-.dash-card{
-    margin-top: 20px;
-    border-radius: 10px;
-    background: white;
-    padding: 20px;
-}
-.dash-card-tasks{
-    display: flex;
-}
-.list{
-    margin-left: 50px;
-}
-.number{
-    font-weight: bold;
-    font-size: 20px;
-}
-.dot{
-    width: 8px;
-    height: 8px;
-    margin: 0 10px 2px 0;
-    margin-top: 5px;
-    border-radius: 100%;
-    margin-left: 5px;
-}
-.count{
-    display: flex;
-}
-.task-status{
-    font-size: 12px;
-    font-weight: bold;
-    color: rgb(156, 156, 156);
-}
-.dot.ongoing{
-    background: rgb(24, 143, 255);
-}
-.dot.pending{
-    background: rgb(255, 213, 24);
-}
-.dot.completed{
-    background: rgb(9, 160, 97);
-}
-.title{
-    padding-left: 10px;
-    font-size: 13px;
-    font-weight: bold;
-}
-.task-list{
-    padding-top: 10px;
-}
-.transactions{
-    margin-top: -20px;
-}
-.transaction-list{
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-.transaction-list img{
-    width: 15px;
-}
-.transaction-name{
-    text-align: left;
-    font-weight: bold;
-    font-size: 14px;
-    padding-left: 20px;
-}
-.transaction-status{
-   padding-top: 3px;
-    font-size: 13px;
-    color: rgb(156, 156, 156);
-}
-.transaction-price{
-    padding-left: 150px;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: right;
-}
-.investors{
-    margin-top: -20px;
-    
-}
-.investor{
-    padding-left: 30px;
-}
-.investor-list{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-}
-.investor-list img{
-    width: 25px;
-}
-.investor-name{
-    text-align: left;
-    font-weight: bold;
-    font-size: 14px;
-    padding-left: 20px;
-}
-.due-date{
-    margin-top: 10px;
-    font-size: 13px;
-    font-weight: bold;
-    color: rgb(156, 156, 156);
-}
-.investment-sum{
-    padding-left: 200px;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: right;
-}
-.equity{
-    padding-top: 20px;
-}  
-.equity-icon{
-    width: 25px;
-}   
-.equity-amount{
-    padding-left: 10px;
-    font-weight: bold;
-    font-size: 20px;
-}
-.equity-details{
-    padding-left: 40px;
-}
-.equity-percent{
-    font-size: 12px;
-    color: rgb(9, 160, 97);
-    font-weight: bold;
-}
-.text-summary{
-    padding-left: 10px;
-}
-.current-tasks{
-    padding-top: 20px;
-}
-.task-list{
-    margin-top: -30px;
-}
-.tasks{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-}
-.task-name{
-    font-weight: bold;
-    font-size: 14px;
-}
-.task-description{
-    font-size: 13px;
-    color: rgb(156, 156, 156);
-}
-.task-button{
-background: transparent;
-border-radius: 5px;
-border: 1px solid rgb(192, 192, 192) ;
-padding: 5px;
-width: 35px;
-height: 35px;
-}
-.task-button img{
-    width: 18px;
-}
-.analysis h2{
-margin-top: -30px;
-}
-.chart{
-    padding-top: 20px;
-}
-.investment-tenure{
-    padding-top: 20px;
-    padding-left: 20px;
+h1 {
+	font-size: 20px !important;
 }
 
-.next-payment{
-    padding-left: 20px;
-    padding-top: 20px;
-    width: 100%;
+.col-two {
+	padding-left: 30px;
 }
-.to-pay{
-    margin-top: -20px;
+
+.col-two .top-grid {
+	display: flex;
+	justify-content: space-between;
 }
-.next-payment-list{
-    display: flex;
-    justify-content: space-between;
+
+.col-two .middle-grid {
+	display: flex;
 }
-.next-payment-list span{
-    padding-top: 20px;
-    font-weight: bold;
-    font-size: 12px;
+
+.col-three {
+	padding-left: 30px;
 }
-.payment-date{
-    color: rgb(156, 156, 156);
+
+.dash-heading {
+	font-size: 14px;
+	font-weight: bold;
 }
-.payment-amt{
-    color: rgb(9, 160, 97);
+
+.dash-card {
+	margin-top: 20px;
+	border-radius: 10px;
+	background: white;
+	padding: 20px;
+}
+
+.dash-card-tasks {
+	display: flex;
+}
+
+.list {
+	margin-left: 50px;
+}
+
+.number {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.dot {
+	width: 8px;
+	height: 8px;
+	margin: 0 10px 2px 0;
+	margin-top: 5px;
+	border-radius: 100%;
+	margin-left: 5px;
+}
+
+.count {
+	display: flex;
+}
+
+.task-status {
+	font-size: 12px;
+	font-weight: bold;
+	color: rgb(156, 156, 156);
+}
+
+.dot.ongoing {
+	background: rgb(24, 143, 255);
+}
+
+.dot.pending {
+	background: rgb(255, 213, 24);
+}
+
+.dot.completed {
+	background: rgb(9, 160, 97);
+}
+
+.title {
+	padding-left: 10px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.task-list {
+	padding-top: 10px;
+}
+
+.transactions {
+	margin-top: -20px;
+}
+
+.transaction-list {
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.transaction-list img {
+	width: 15px;
+}
+
+.transaction-name {
+	text-align: left;
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+.transaction-status {
+	padding-top: 3px;
+	font-size: 13px;
+	color: rgb(156, 156, 156);
+}
+
+.transaction-price {
+	padding-left: 150px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.investors {
+	margin-top: -20px;
+}
+
+.investor {
+	padding-left: 30px;
+}
+
+.investor-list {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+.investor-list img {
+	width: 25px;
+}
+
+.investor-name {
+	text-align: left;
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+.due-date {
+	margin-top: 10px;
+	font-size: 13px;
+	font-weight: bold;
+	color: rgb(156, 156, 156);
+}
+
+.investment-sum {
+	padding-left: 200px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.equity {
+	padding-top: 20px;
+}
+
+.equity-icon {
+	width: 25px;
+}
+
+.equity-amount {
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.equity-details {
+	padding-left: 40px;
+}
+
+.equity-percent {
+	font-size: 12px;
+	color: rgb(9, 160, 97);
+	font-weight: bold;
+}
+
+.text-summary {
+	padding-left: 10px;
+}
+
+.current-tasks {
+	padding-top: 20px;
+}
+
+.task-list {
+	margin-top: -30px;
+}
+
+.tasks {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+.task-name {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.task-description {
+	font-size: 13px;
+	color: rgb(156, 156, 156);
+}
+
+.task-button {
+	background: transparent;
+	border-radius: 5px;
+	border: 1px solid rgb(192, 192, 192);
+	padding: 5px;
+	width: 35px;
+	height: 35px;
+}
+
+.task-button img {
+	width: 18px;
+}
+
+.analysis h2 {
+	margin-top: -30px;
+}
+
+.chart {
+	padding-top: 20px;
+}
+
+.investment-tenure {
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.next-payment {
+	padding-left: 20px;
+	padding-top: 20px;
+	width: 100%;
+}
+
+.to-pay {
+	margin-top: -20px;
+}
+
+.next-payment-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.next-payment-list span {
+	padding-top: 20px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.payment-date {
+	color: rgb(156, 156, 156);
+}
+
+.payment-amt {
+	color: rgb(9, 160, 97);
 }
