@@ -10,14 +10,14 @@ import equity from '../../../../static/equity.svg';
 
 class Sme extends Component {
   render() {
-    this.a = 'wowo';
+    this.name = 'sme';
     return (
             <div className='dashboard'>
               <div className='col-one'>
               <TaskOverview />
               <Equity />
               <Tasks />
-              <Tenure />
+              <NextPayment />
               </div>
               <div className='col-two'>
                 <div className='top-grid'>
@@ -26,7 +26,7 @@ class Sme extends Component {
                 </div>
                 <div className='middle-grid'>
                   <RevenueChart />
-                  <NextPayment />
+                  <Tenure />
                 </div>
               </div>
             </div>
@@ -113,15 +113,6 @@ function NextPayment() {
          </div>
          <div className='next-payment-list'>
          <span className='payment-date'>July 19</span> <span className='payment-amt'>$3,200</span>
-         </div>
-         <div className='next-payment-list'>
-         <span className='payment-date'>Nov 20</span> <span className='payment-amt'>$500</span>
-         </div>
-         <div className='next-payment-list'>
-         <span className='payment-date'>Dec 20</span> <span className='payment-amt'>$500</span>
-         </div>
-         <div className='next-payment-list'>
-         <span className='payment-date'>Dec 20</span> <span className='payment-amt'>$500</span>
          </div>
          </div>
        </div>
