@@ -1,5 +1,5 @@
 import React from 'react';
-import more from '../../../static/ellipsis.svg';
+import more from '../../../../static/ellipsis.svg';
 
 // Dummy data for projects
 const tasks = [

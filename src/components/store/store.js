@@ -11,7 +11,7 @@ const store = createStore(
 );
 
 if (localStorage.smeJwt) {
-  const user = { token: localStorage.smeJwt };
+  const user = { token: localStorage.projectJwt };
   store.dispatch(userLoggedIN(user));
 }
 

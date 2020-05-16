@@ -1,12 +1,12 @@
 /* eslint-disable no-shadow */
 /* eslint-disable react/jsx-key */
 import React, { Component } from 'react';
-import '../../../styles/dashboard/dashboard.css';
+import '../../../../styles/dashboard/dashboard.css';
 import RevenueChart from './revenueChart';
 import Transaction from './transactions';
 import Investors from './investors';
 import Tasks from './currentTasks';
-import equity from '../../../static/equity.svg';
+import equity from '../../../../static/equity.svg';
 
 class Sme extends Component {
   render() {

@@ -1,7 +1,7 @@
 import React from 'react';
-import sent from '../../../static/send.svg';
-import recieved from '../../../static/recieve.svg';
-import pending from '../../../static/pending.svg';
+import sent from '../../../../static/send.svg';
+import recieved from '../../../../static/recieve.svg';
+import pending from '../../../../static/pending.svg';
 
 // Dummy data
 const transactions = [
