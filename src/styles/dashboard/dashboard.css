@@ -1,275 +1,276 @@
-.dashboard {
+  .dashboard {
 	margin: 0;
 	padding: 0;
 	padding-top: 40px;
 	margin-left: 80px;
 	margin-right: 50px;
 	display: flex;
-}
-
-h1 {
+  }
+  
+  h1 {
 	font-size: 20px !important;
-}
-
-.col-two {
+  }
+  
+  .col-two {
 	padding-left: 30px;
-}
-
-.col-two .top-grid {
+  }
+  
+  .col-two .top-grid {
 	display: flex;
 	justify-content: space-between;
-}
-
-.col-two .middle-grid {
+  }
+  
+  .col-two .middle-grid {
 	display: flex;
-}
-
-.col-three {
+  }
+  
+  .col-three {
 	padding-left: 30px;
-}
-
-.dash-heading {
+  }
+  
+  .dash-heading {
 	font-size: 14px;
 	font-weight: bold;
-}
-
-.dash-card {
+  }
+  
+  .dash-card {
 	margin-top: 20px;
 	border-radius: 10px;
 	background: white;
 	padding: 20px;
-}
-
-.dash-card-tasks {
+  }
+  
+  .dash-card-tasks {
 	display: flex;
-}
-
-.list {
+  }
+  
+  .list {
 	margin-left: 50px;
-}
-
-.number {
+  }
+  
+  .number {
 	font-weight: bold;
 	font-size: 20px;
-}
-
-.dot {
+  }
+  
+  .dot {
 	width: 8px;
 	height: 8px;
 	margin: 0 10px 2px 0;
 	margin-top: 5px;
 	border-radius: 100%;
 	margin-left: 5px;
-}
-
-.count {
+  }
+  
+  .count {
 	display: flex;
-}
-
-.task-status {
+  }
+  
+  .task-status {
 	font-size: 12px;
 	font-weight: bold;
 	color: rgb(156, 156, 156);
-}
-
-.dot.ongoing {
+  }
+  
+  .dot.ongoing {
 	background: rgb(24, 143, 255);
-}
-
-.dot.pending {
+  }
+  
+  .dot.pending {
 	background: rgb(255, 213, 24);
-}
-
-.dot.completed {
+  }
+  
+  .dot.completed {
 	background: rgb(9, 160, 97);
-}
-
-.title {
+  }
+  
+  .title {
 	padding-left: 10px;
 	font-size: 13px;
 	font-weight: bold;
-}
-
-.task-list {
+  }
+  
+  .task-list {
 	padding-top: 10px;
-}
-
-.transactions {
+  }
+  
+  .transactions {
 	margin-top: -20px;
-}
-
-.transaction-list {
+  }
+  
+  .transaction-list {
 	padding-top: 20px;
 	display: flex;
 	justify-content: space-between;
-}
-
-.transaction-list img {
+  }
+  
+  .transaction-list img {
 	width: 15px;
-}
-
-.transaction-name {
+  }
+  
+  .transaction-name {
 	text-align: left;
 	font-weight: bold;
 	font-size: 14px;
 	padding-left: 20px;
-}
-
-.transaction-status {
+  }
+  
+  .transaction-status {
 	padding-top: 3px;
 	font-size: 13px;
 	color: rgb(156, 156, 156);
-}
-
-.transaction-price {
+  }
+  
+  .transaction-price {
 	padding-left: 150px;
 	font-size: 14px;
 	font-weight: bold;
 	text-align: right;
-}
-
-.investors {
+  }
+  
+  .investors {
 	margin-top: -20px;
-}
-
-.investor {
+  }
+  
+  .investor {
 	padding-left: 30px;
-}
-
-.investor-list {
+  }
+  
+  .investor-list {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 20px;
-}
-
-.investor-list img {
+  }
+  
+  .investor-list img {
 	width: 25px;
-}
-
-.investor-name {
+  }
+  
+  .investor-name {
 	text-align: left;
 	font-weight: bold;
 	font-size: 14px;
 	padding-left: 20px;
-}
-
-.due-date {
+  }
+  
+  .due-date {
 	margin-top: 10px;
 	font-size: 13px;
 	font-weight: bold;
 	color: rgb(156, 156, 156);
-}
-
-.investment-sum {
+  }
+  
+  .investment-sum {
 	padding-left: 200px;
 	font-size: 14px;
 	font-weight: bold;
 	text-align: right;
-}
-
-.equity {
+  }
+  
+  .equity {
 	padding-top: 20px;
-}
-
-.equity-icon {
+  }
+  
+  .equity-icon {
 	width: 25px;
-}
-
-.equity-amount {
+  }
+  
+  .equity-amount {
 	padding-left: 10px;
 	font-weight: bold;
 	font-size: 20px;
-}
-
-.equity-details {
+  }
+  
+  .equity-details {
 	padding-left: 40px;
-}
-
-.equity-percent {
+  }
+  
+  .equity-percent {
 	font-size: 12px;
 	color: rgb(9, 160, 97);
 	font-weight: bold;
-}
-
-.text-summary {
+  }
+  
+  .text-summary {
 	padding-left: 10px;
-}
-
-.current-tasks {
+  }
+  
+  .current-tasks {
 	padding-top: 20px;
-}
-
-.task-list {
+  }
+  
+  .task-list {
 	margin-top: -30px;
-}
-
-.tasks {
+  }
+  
+  .tasks {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 20px;
-}
-
-.task-name {
+  }
+  
+  .task-name {
 	font-weight: bold;
 	font-size: 14px;
-}
-
-.task-description {
+  }
+  
+  .task-description {
 	font-size: 13px;
 	color: rgb(156, 156, 156);
-}
-
-.task-button {
+  }
+  
+  .task-button {
 	background: transparent;
 	border-radius: 5px;
 	border: 1px solid rgb(192, 192, 192);
 	padding: 5px;
 	width: 35px;
 	height: 35px;
-}
-
-.task-button img {
+  }
+  
+  .task-button img {
 	width: 18px;
-}
-
-.analysis h2 {
+  }
+  
+  .analysis h2 {
 	margin-top: -30px;
-}
-
-.chart {
+  }
+  
+  .chart {
 	padding-top: 20px;
-}
-
-.investment-tenure {
+  }
+  
+  .investment-tenure {
 	padding-top: 20px;
 	padding-left: 20px;
-}
-
-.next-payment {
+  }
+  
+  .next-payment {
 	padding-left: 20px;
 	padding-top: 20px;
 	width: 100%;
-}
-
-.to-pay {
+  }
+  
+  .to-pay {
 	margin-top: -20px;
-}
-
-.next-payment-list {
+  }
+  
+  .next-payment-list {
 	display: flex;
 	justify-content: space-between;
-}
-
-.next-payment-list span {
+  }
+  
+  .next-payment-list span {
 	padding-top: 20px;
 	font-weight: bold;
 	font-size: 12px;
-}
-
-.payment-date {
+  }
+  
+  .payment-date {
 	color: rgb(156, 156, 156);
-}
-
-.payment-amt {
+  }
+  
+  .payment-amt {
 	color: rgb(9, 160, 97);
-}
+  }
+  
