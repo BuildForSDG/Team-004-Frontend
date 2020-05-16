@@ -17,6 +17,7 @@
     "test:watch": "jest --watch",
     "test:cover": "jest --coverage",
     "lint": "eslint \"src/**/*.js\"",
+    "cslint": "stylelint \"src/**/*.css\"",
     "start": "parcel ./src/index.html"
   },
   "author": {
@@ -58,7 +59,9 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.4.0",
     "parcel-bundler": "^1.12.4",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0"
   },
   "browserslist": [
     "last 1 Chrome versions"
