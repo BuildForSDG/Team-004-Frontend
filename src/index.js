@@ -1,11 +1,16 @@
-import app from './app';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { HashRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import App from './app';
+import store from './components/store/store';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
-const startApp = async () => {
-  const header = document.querySelector('[data-app-name]');
-  if (!header) return;
-
-  const programName = await app();
-  header.textContent = programName;
-};
-
-document.addEventListener('DOMContentLoaded', startApp);
+ReactDOM.render(
+  <HashRouter>
+    <Provider store = {store}>
+    <App />
+    </Provider>
+  </HashRouter>, document.getElementById('app') || document.createElement('div')
+);
