@@ -10,8 +10,9 @@ const store = createStore(
   composeWithDevTools(applyMiddleware(thunk))
 );
 
-if (localStorage.smeJwt) {
-  const user = { token: localStorage.projectJwt };
+const storage = localStorage;
+if (storage.smeJwt) {
+  const user = { token: storage.projectJwt };
   store.dispatch(userLoggedIN(user));
 }
 
