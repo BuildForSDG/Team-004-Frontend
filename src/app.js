@@ -1,17 +1,38 @@
-import React, { Component } from 'react';
+import React from 'react';
 import LoginLanding from './components/LoginLanding.jsx';
+import SideNav from './components/navbar/sidenav';
+import Navbar from './components/navbar/navbar';
+import AuthRoutes from './components/routes/afterAuth';
+import NotAuthRoutes from './components/routes/beforeAuth';
+import './app.css';
 
-class App extends Component {
-  render() {
-    this.a = 'Hello';
-    return (
-        <div>
-            {/* <h1>Hello team 4</h1> */}
-            <LoginLanding
-            />
-        </div>
-    );
+function App() {
+  // Created a checkAuth here just to seperate auth views
+  let checkAuth;
+  if (localStorage.getItem('projectJwt')) {
+    checkAuth = <div>
+            <div className='ifAuth'>
+       <div className='sidenav'>
+         <SideNav />
+       </div>
+       <div className='content'>
+        <AuthRoutes />
+       </div>
+      </div>
+    </div>;
+  } else {
+    checkAuth = <div>
+      <Navbar />
+      <NotAuthRoutes />
+      <LoginLanding/>
+    </div>;
   }
+  return (
+    <div className='App'>
+      {/* Check css file for app  */}
+      {checkAuth}
+    </div>
+  );
 }
 
 export default App;

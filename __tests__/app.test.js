@@ -1,13 +1,13 @@
-import app from '../src/index';
+import app from '../src/app';
 
 describe('app module', () => {
   test('it exists', async () => {
     expect(app).toBeDefined();
   });
 
-  test('it returns program name with SDGs', async () => {
+  test('it returns app className is App', async () => {
     const result = await app();
-    const sdgPos = (result || '').indexOf('SDG');
-    expect(sdgPos).toBeGreaterThanOrEqual(0);
+    const response = result.props.className;
+    expect(response).toBe('App');
   });
 });
