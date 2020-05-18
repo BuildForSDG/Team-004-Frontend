@@ -1,13 +1,29 @@
 import { AUDIT_LOADING, AUDIT_LOADED, AUDIT_FAILED } from '../types/audit';
 
-export default function user(state = {}, action = {}) {
+const initialState = {
+  loading: false,
+  audits: [],
+  error: null
+};
+export default function audit(state = initialState, action) {
   switch (action.type) {
     case AUDIT_LOADING:
-      return 'loading';
+      return {
+        ...state,
+        loading: true
+      };
     case AUDIT_LOADED:
-      return action.data;
+      return {
+        ...state,
+        loading: false,
+        audits: [...state.audits, action.payload.data]
+      };
     case AUDIT_FAILED:
-      return state;
+      return {
+        ...state,
+        loading: false,
+        error: action.payload.error
+      };
     default: return state;
   }
 }

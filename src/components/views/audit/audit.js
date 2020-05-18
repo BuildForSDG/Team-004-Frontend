@@ -2,19 +2,21 @@
 /* eslint-disable comma-dangle */
 import React, { Component } from 'react';
 import axios from 'axios';
+import { connect } from 'react-redux';
 import {
   Container, Card, Dropdown, Button
 } from 'react-bootstrap';
-import data from '../../dummyData/data.json';
+import PropTypes from 'prop-types';
+import { audit } from '../../actions/audit';
 import '../../../styles/audit/audit.css';
 import UserIcon from '../../../static/user.svg';
 
 class Audit extends Component {
   // eslint-disable-next-line class-methods-use-this
   componentDidMount() {
-    axios.get(data).then((res) => {
-      console.log(data);
-    });
+    const { fetchAudits } = this.props;
+    fetchAudits();
+    console.log(this.props.audits);
   }
 
   render() {
@@ -29,8 +31,21 @@ class Audit extends Component {
     );
   }
 }
+function mapDispatchToProps(dispatch) {
+  return {
+    fetchAudits: () => dispatch(audit())
+  };
+}
+function mapStateToProps(state) {
+  return {
+    audits: state.audit
+  };
+}
 
-export default Audit;
+Audit.propTypes = {
+  fetchAudits: PropTypes.func.isRequired
+};
+export default connect(mapStateToProps, mapDispatchToProps)(Audit);
 
 
 function TotalAuditSum() {

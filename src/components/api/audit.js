@@ -3,6 +3,6 @@ import data from '../dummyData/data.json';
 
 export default {
   audit: {
-    all: () => axios.get(data).then((res) => res.data)
+    all: () => axios.get(data).then((res) => res.config.url)
   }
 };

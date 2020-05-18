@@ -1,16 +1,30 @@
 /* eslint-disable max-len */
-import api from '../dummyData/data.json';
 import { AUDIT_LOADING, AUDIT_LOADED, AUDIT_FAILED } from '../types/audit';
 // eslint-disable-next-line max-len
+import api from '../api/audit';
 
 export const auditLoading = () => ({
   type: AUDIT_LOADING
 });
 export const auditLoaded = (data) => ({
   type: AUDIT_LOADED,
-  data
+  payload: {
+    data
+  }
 });
-export const auditFailed = () => ({
-  type: AUDIT_FAILED
+export const auditFailed = (error) => ({
+  type: AUDIT_FAILED,
+  payload: {
+    error
+  }
 });
-export const audit = () => (dispatch) => api.audit.all().then((data) => dispatch(auditLoaded(data)));
+
+export const audit = () => (dispatch, getState) => {
+  dispatch(auditLoading());
+  api.audit.all().then((data) => {
+    dispatch(auditLoaded(data));
+    console.log(getState());
+  }).catch((error) => {
+    dispatch(auditFailed(error.message));
+  });
+};
