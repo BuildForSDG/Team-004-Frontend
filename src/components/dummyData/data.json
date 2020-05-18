@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Wefinance Inc",
+        "type": "disbursement",
+        "amount": "$5,000",
+        "date": "05-05-2020"
+    },
+    {
+        "name": "Goldman Zac",
+        "type": "disbursement",
+        "amount": "$2,000",
+        "date": "05-05-2020"
+    },
+    {
+        "name": "Warren Buffet",
+        "type": "investment",
+        "amount": "$1,000",
+        "date": "04-05-2020"
+    },
+    {
+        "name": "Chan Zuckerberg",
+        "type": "investment",
+        "amount": "$7,000",
+        "date": "02-05-2020"
+    },
+    {
+        "name": "Andela",
+        "type": "investment",
+        "amount": "$9,000",
+        "date": "02-04-2020"
+    },
+    {
+        "name": "Kuda Bank",
+        "type": "disbursement",
+        "amount": "$2,000",
+        "date": "05-03-2020"
+    },
+    {
+        "name": "Jacob Boutique",
+        "type": "disbursement",
+        "amount": "$6,000",
+        "date": "01-05-2020"
+    },
+    {
+        "name": "Nike Inc",
+        "type": "investment",
+        "amount": "$4,000",
+        "date": "05-03-2020"
+    },
+    {
+        "name": "Vans",
+        "type": "disbursement",
+        "amount": "$2,000",
+        "date": "05-04-2020"
+    }
+]
