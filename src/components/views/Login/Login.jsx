@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import Field from './common/Fields.jsx';
+import { Link } from 'react-router-dom';
+import Field from '../../common/Fields.jsx';
+
 
 const fields = [
   {
@@ -32,7 +34,7 @@ class Login extends Component {
         </form>
         <div className='footer'>
             <h4>Forgot Password</h4>
-            <h4>Don't Have an account? <span className='blue-span'>Sign Up </span> </h4>
+            <h4>Don't Have an account? <Link to={{ pathname: '/sme-signup' }} className='blue-span'> Sign Up </Link> </h4>
         </div>
         </div>
 

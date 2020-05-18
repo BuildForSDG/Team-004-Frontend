@@ -1,5 +1,4 @@
 import React from 'react';
-import LoginLanding from './components/LoginLanding.jsx';
 import SideNav from './components/navbar/sidenav';
 import Navbar from './components/navbar/navbar';
 import AuthRoutes from './components/routes/afterAuth';
@@ -24,7 +23,6 @@ function App() {
     checkAuth = <div>
       <Navbar />
       <NotAuthRoutes />
-      <LoginLanding/>
     </div>;
   }
   return (

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import step1img from '../../images/bgsvg.svg'
+import step1img from '../../images/steps (6).svg'
 
 class LoginSideBar extends Component {
   render() {
@@ -15,9 +15,9 @@ class LoginSideBar extends Component {
                           <h2>1</h2>
                       </div> */}
                       <div className="step-text">
-                          <h3>Easy to Scale your Business through</h3>
+                          <h3>Support a Business, scale your finance</h3>
                           <p>
-                            <span className="blue-span">BuildForSDG</span> connects you with the right investors to help scale your business through the five stages of SME Growth:- Existence, Survival, Success, Take-Off and Maturity
+                            <span className="blue-span">BuildForSDG</span> Connects you with the right SMEs that you can invest your money without fear of losing it all yet getting maximum returns.
                           </p>
                       </div>
                       <div className="step-svg">

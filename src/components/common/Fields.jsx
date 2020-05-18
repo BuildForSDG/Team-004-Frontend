@@ -12,7 +12,6 @@ class Field extends Component {
                     placeholder={this.props.placeholder}
                     required="required"
                     name={this.props.name}
-                    o
                 />
             </div>
     );

@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import Login from './Login.jsx';
-import LoginSideBar from './common/LoginSidebar.jsx';
-import '../styles/login.css';
-
+import LoginSideBar from '../../common/LoginSidebar.jsx';
+import '../../../styles/login.css';
 
 class LoginLanding extends Component {
   render() {
     this.a = 'Hello';
+
     return (
         <div className='landing'>
             <Login
-              header='Gion'
+              header='BuildForSDG'
               subHeader="SME Login Page"
             />
             <LoginSideBar
