@@ -1,0 +1,143 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable comma-dangle */
+import React, { useState } from 'react';
+import {
+  Card, Dropdown, Button
+} from 'react-bootstrap';
+import UserIcon from '../../../static/user.svg';
+import audit from '../../api/audit';
+
+function AuditFilter(props) {
+  const data = props.getAudits;
+  const [buttonText, setButtonText] = useState('All transactions');
+  let [filterItem, filterName] = useState('All transactions');
+
+  const filterByAll = () => {
+    setButtonText('All transactions');
+  };
+  const filterByDisbursement = () => {
+    setButtonText('Disbursement');
+  };
+  const filterByInvestment = () => {
+    setButtonText('Investment');
+  };
+  const filter = () => {
+    filterItem = buttonText;
+    filterName(filterItem);
+  };
+  const clearFilter = () => {
+    setButtonText('All transactions');
+    filterName('All transactions');
+  };
+  return (
+    <div>
+                <div className='audit-filter'>
+              <Dropdown style={{ paddingRight: '5px', }}>
+    <Dropdown.Toggle id="dropdown-basic" style={{
+      padding: '12px',
+      background: 'rgb(215, 237, 255)',
+      border: 'none',
+      color: 'rgb(90, 90, 90)',
+      fontWeight: 'bold',
+      fontSize: '15px',
+    }}>
+    <img src={UserIcon} alt='user-icon' style={{ width: '15px', }} />  <span className='filter-name'>{buttonText}</span>
+    </Dropdown.Toggle>
+
+    <Dropdown.Menu>
+  <Dropdown.Item onClick={filterByAll} >All transactions</Dropdown.Item>
+      <Dropdown.Item onClick={filterByDisbursement} >Disbursement</Dropdown.Item>
+      <Dropdown.Item onClick={filterByInvestment} >Investment</Dropdown.Item>
+    </Dropdown.Menu>
+  </Dropdown>
+  <div className='filter-buttons'>
+  <Button onClick={filter} variant="primary" style={{ padding: '12px', width: '100px', fontSize: '15px', }}>Filter</Button>{' '}
+  <Button onClick={clearFilter} variant="secondary" style={{
+    padding: '12px',
+    width: '100px',
+    fontSize: '15px',
+    background: 'transparent',
+    border: '1px solid #3a59fd',
+    color: '#3a59fd',
+  }}>Clear</Button>{' '}
+  </div>
+          </div>
+          <AuditList filterName = {filterItem} audits = {data} />
+    </div>
+  );
+}
+
+function AuditList(props) {
+  const { audits } = props;
+  const { filterName } = props;
+  let isEmpty = true;
+  // Empty checker
+  const emptyChecker = (obj) => {
+    // eslint-disable-next-line no-restricted-syntax
+    for (const key in obj) {
+      // eslint-disable-next-line no-prototype-builtins
+      if (obj.hasOwnProperty(key)) isEmpty = false;
+    }
+    return isEmpty;
+  };
+  // eslint-disable-next-line react/prop-types
+
+  let auditContent;
+  // eslint-disable-next-line react/prop-types
+  emptyChecker(audits.audits[0]);
+  if (audits.loading === true) {
+    console.log('loading');
+  }
+  if (isEmpty === false) {
+    if (filterName === 'All transactions') {
+      const data = audits.audits[0].map((index) =>(
+        <div key={index.name}>
+                                 <Card style={{
+                          marginTop: '10px',
+                          padding: '20px',
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          flexDirection: 'row',
+                          textAlign: 'left',
+                        }}>
+                      <span className='name'>{index.name}</span>
+                      <span className='type'>{index.type}</span>
+                      <span className='date'>{index.date}</span>
+                      <span className='amount'>{index.amount}</span>
+                  </Card>
+        </div>
+      ));
+      auditContent = data;
+    }
+    if (filterName !== 'All transactions') {
+      const results = audits.audits[0].filter((result) => (
+        result.type.includes(filterName)
+      )).map((index) => (
+          <div key={index.name}>
+                       <Card style={{
+                          marginTop: '10px',
+                          padding: '20px',
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          flexDirection: 'row',
+                          textAlign: 'left',
+                        }}>
+                      <span className='name'>{index.name}</span>
+                      <span className='type'>{index.type}</span>
+                      <span className='date'>{index.date}</span>
+                      <span className='amount'>{index.amount}</span>
+                  </Card>
+              </div>
+      ));
+      auditContent = results;
+    }
+  }
+  return (
+          <div className='audit-transactions'>
+              <span className='transaction-date'>05/05/2020</span>
+              {auditContent}
+          </div>
+  );
+}
+
+export default AuditFilter;

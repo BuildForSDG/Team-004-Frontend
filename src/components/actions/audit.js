@@ -19,11 +19,14 @@ export const auditFailed = (error) => ({
   }
 });
 
-export const audit = () => (dispatch, getState) => {
+export const filterAudit = () => (dispatch) => {
+  dispatch(console.log('Hello'));
+};
+
+export const audit = () => (dispatch) => {
   dispatch(auditLoading());
   api.audit.all().then((data) => {
     dispatch(auditLoaded(data));
-    console.log(getState());
   }).catch((error) => {
     dispatch(auditFailed(error.message));
   });

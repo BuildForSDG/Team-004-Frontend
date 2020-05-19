@@ -23,7 +23,8 @@
 .audit-filter {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 5px;
+  padding-bottom: 20px;
 }
 
 .filter-name {
@@ -36,4 +37,17 @@
 
 .audit-transactions .transaction-date {
   color: rgb(90, 90, 90);
+}
+
+.audit-transactions .name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.audit-transactions .type {
+  text-align: left;
+}
+
+.audit-transactions .amount {
+  color: rgb(18, 61, 18);
 }
