@@ -11,6 +11,7 @@ class Field extends Component {
                     type={this.props.type}
                     placeholder={this.props.placeholder}
                     required="required"
+                    max={this.props.max}
                     name={this.props.name}
                 />
             </div>

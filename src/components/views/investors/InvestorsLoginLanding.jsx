@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Login from './Login.jsx';
-import LoginSideBar from '../../common/LoginSidebar.jsx';
+import LoginSideBar from '../../common/InvestorsLoginSidebar';
 import '../../../styles/login.css';
 
 class LoginLanding extends Component {
@@ -10,11 +10,10 @@ class LoginLanding extends Component {
     return (
         <div className='landing'>
             <Login
-              // header='BuildForSDG'
-              subHeader="SME Login Page"
+              subHeader="Investors Login"
             />
             <LoginSideBar
-                heading="Let’s Help your Business"
+                heading="Support a Business to"
 
             />
         </div>
