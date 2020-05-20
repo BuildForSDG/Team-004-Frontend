@@ -4,12 +4,13 @@ import React, { useState } from 'react';
 import {
   Card, Dropdown, Button
 } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 import UserIcon from '../../../static/user.svg';
-import audit from '../../api/audit';
 
 function AuditFilter(props) {
   const data = props.getAudits;
   const [buttonText, setButtonText] = useState('All transactions');
+  // eslint-disable-next-line prefer-const
   let [filterItem, filterName] = useState('All transactions');
 
   const filterByAll = () => {
@@ -84,33 +85,33 @@ function AuditList(props) {
 
   let auditContent;
   // eslint-disable-next-line react/prop-types
-  emptyChecker(audits.audits[0]);
+  emptyChecker(audits[0]);
   if (audits.loading === true) {
     console.log('loading');
   }
   if (isEmpty === false) {
     if (filterName === 'All transactions') {
-      const data = audits.audits[0].map((index) =>(
+      const data = audits[0].map((index) => (
         <div key={index.name}>
                                  <Card style={{
-                          marginTop: '10px',
-                          padding: '20px',
-                          display: 'flex',
-                          justifyContent: 'space-between',
-                          flexDirection: 'row',
-                          textAlign: 'left',
-                        }}>
+                                    marginTop: '10px',
+                                    padding: '20px',
+                                    display: 'flex',
+                                    justifyContent: 'space-between',
+                                    flexDirection: 'row',
+                                    textAlign: 'left',
+                                  }}>
                       <span className='name'>{index.name}</span>
                       <span className='type'>{index.type}</span>
                       <span className='date'>{index.date}</span>
-                      <span className='amount'>{index.amount}</span>
+                      <span className='amount'>${index.amount}</span>
                   </Card>
         </div>
       ));
       auditContent = data;
     }
     if (filterName !== 'All transactions') {
-      const results = audits.audits[0].filter((result) => (
+      const results = audits[0].filter((result) => (
         result.type.includes(filterName)
       )).map((index) => (
           <div key={index.name}>
@@ -125,7 +126,7 @@ function AuditList(props) {
                       <span className='name'>{index.name}</span>
                       <span className='type'>{index.type}</span>
                       <span className='date'>{index.date}</span>
-                      <span className='amount'>{index.amount}</span>
+                      <span className='amount'>${index.amount}</span>
                   </Card>
               </div>
       ));
@@ -139,5 +140,12 @@ function AuditList(props) {
           </div>
   );
 }
+AuditList.propTypes = {
+  audits: PropTypes.array,
+  filterName: PropTypes.string.isRequired
+};
 
+AuditFilter.propTypes = {
+  getAudits: PropTypes.array.isRequired,
+};
 export default AuditFilter;

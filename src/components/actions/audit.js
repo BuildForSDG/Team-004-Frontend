@@ -19,10 +19,6 @@ export const auditFailed = (error) => ({
   }
 });
 
-export const filterAudit = () => (dispatch) => {
-  dispatch(console.log('Hello'));
-};
-
 export const audit = () => (dispatch) => {
   dispatch(auditLoading());
   api.audit.all().then((data) => {

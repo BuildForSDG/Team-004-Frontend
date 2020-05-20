@@ -24,7 +24,7 @@ class Audit extends Component {
     return (
           <div className='audit'>
               <Container>
-                  <TotalAudit />
+                  <TotalAudit getAudits = {getAudits} />
                   <AuditList getAudits ={getAudits} />
               </Container>
           </div>
@@ -44,6 +44,6 @@ function mapStateToProps(state) {
 
 Audit.propTypes = {
   loadAudits: PropTypes.func.isRequired,
-  getAudits: PropTypes.object.isRequired
+  getAudits: PropTypes.array.isRequired
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Audit);
