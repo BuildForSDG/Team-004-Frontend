@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Field from '../../common/Fields.jsx';
-
 
 const fields = [
   {
@@ -15,7 +15,7 @@ const fields = [
 class Login extends Component {
   render() {
     return (
-        <div className="login-wrapper">
+      <div className="login-wrapper">
           <form action="">
             <div className='login-form-header'>
               <h1>{this.props.header}</h1>
@@ -34,12 +34,17 @@ class Login extends Component {
         </form>
         <div className='footer'>
             <h4>Forgot Password</h4>
-            <h4>Don't Have an account? <Link to={{ pathname: '/investors-signup' }} className='blue-span'> Sign Up </Link> </h4>
+            <h4>Dont Have an account? <Link to={{ pathname: '/investors-signup' }} className='blue-span'> Sign Up </Link> </h4>
         </div>
         </div>
 
     );
   }
 }
+
+Login.propTypes = {
+  header: PropTypes.string,
+  subHeader: PropTypes.string
+};
 
 export default Login;

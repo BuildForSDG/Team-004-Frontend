@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Field from '../../common/Fields.jsx';
 
 
@@ -45,5 +46,10 @@ class Signup extends Component {
     );
   }
 }
+
+Signup.propTypes = {
+  header: PropTypes.string,
+  subHeader: PropTypes.string
+};
 
 export default Signup;

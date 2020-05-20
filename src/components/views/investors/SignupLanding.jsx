@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Signup from './SignUp.jsx';
-import LoginSideBar from '../../common/InvestorsLoginSidebar';
+import LoginSideBar from '../../common/InvestorsLoginSidebar.jsx';
 import '../../../styles/login.css';
 
 class SignupLanding extends Component {
