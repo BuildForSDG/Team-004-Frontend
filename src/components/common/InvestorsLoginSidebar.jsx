@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import step1img from '../../images/steps (6).svg';
 
 class LoginSideBar extends Component {
+  // Component Contains Login SideBar
   render() {
     return (
             <div className='login-sidbar'>
