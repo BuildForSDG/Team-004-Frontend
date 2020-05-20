@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import step1img from '../../images/steps (6).svg'
+import PropTypes from 'prop-types';
+import step1img from '../../images/steps (6).svg';
 
 class LoginSideBar extends Component {
   render() {
@@ -11,9 +12,6 @@ class LoginSideBar extends Component {
               </div>
               <div className="sidbar-steps">
                   <div className="sidebar-step-items">
-                      {/* <div className="step-number">
-                          <h2>1</h2>
-                      </div> */}
                       <div className="step-text">
                           <h3>Support a Business, scale your finance</h3>
                           <p>
@@ -25,9 +23,14 @@ class LoginSideBar extends Component {
                       </div>
                   </div>
               </div>
-                
             </div>
     );
   }
 }
+
+LoginSideBar.propTypes = {
+  heading: PropTypes.string,
+  subHeading: PropTypes.string
+};
+
 export default LoginSideBar;
