@@ -1,8 +1,8 @@
 import axios from 'axios';
-import data from '../dummyData/data.json';
+import auditData from '../dummyData/audit';
 
 export default {
   audit: {
-    all: () => axios.get(data).then((res) => res.config.url)
+    all: () => axios.get(auditData).then((res) => res.config.url)
   }
 };
