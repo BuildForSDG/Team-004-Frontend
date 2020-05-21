@@ -6,7 +6,7 @@ body {
  font-family: 'Oxygen', sans-serif;
   overflow-x: hidden;
 }
-
+/*header*/
 .header {
   overflow: hidden;
   background-color: #fff;
@@ -50,7 +50,18 @@ body {
 .header-right {
   float: right;
 }
-/* The hero image */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+/* The hero image header banner*/
 .hero-image {
   background-color:#01358D;
   height: 600px;
@@ -90,7 +101,7 @@ font-family: 'DM Sans', sans-serif;
   border: 1px solid #fff;
   color:#fff;
 }
-
+/*Container and column*/
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -215,7 +226,7 @@ font-family: 'DM Sans', sans-serif;
   
 }
 
-/* Features */
+/* Features area */
 .wfn-feature-side {
   margin-top: 21px;
   margin-bottom: 21px;
@@ -331,20 +342,10 @@ font-family: 'DM Sans', sans-serif;
   -webkit-text-stroke: 1px #01358D !important;
   color:transparent
 }
+/*how it works*/
 .how-it-works{
   margin-top:50px;
 }
 .text-center{
   text-align: center;
-}
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .header-right {
-    float: none;
-  }
 }
