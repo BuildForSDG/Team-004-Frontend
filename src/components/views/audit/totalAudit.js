@@ -1,12 +1,17 @@
+/* eslint-disable no-restricted-syntax */
+/* eslint-disable no-prototype-builtins */
+/* eslint-disable no-plusplus */
 /* eslint-disable comma-dangle */
 import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import PropTypes from 'prop-types';
 import {
   Card
 } from 'react-bootstrap';
+import '../../../styles/audit/audit.css';
 
 function TotalAuditSum(props) {
   const loadAllTransactions = props.getAudits;
-  console.log(loadAllTransactions);
   let investmentSum = 0;
   let disbursementSum = 0;
   let investmentCount = 0;
@@ -22,19 +27,16 @@ function TotalAuditSum(props) {
       return empty;
     };
     emptyChecker(loadAllTransactions[0]);
-    if (empty === true) {
-      console.log('Empty');
-    }
     if (empty === false) {
       const data = loadAllTransactions[0];
       for (let i = 0; i < data.length; i++) {
         if (data[i].type === 'Investment') {
           investmentCount++;
-          investmentSum += parseInt(data[i].amount);
+          investmentSum += parseInt(data[i].amount, 10);
         }
         if (data[i].type === 'Disbursement') {
           disbursementCount++;
-          disbursementSum += parseInt(data[i].amount);
+          disbursementSum += parseInt(data[i].amount, 10);
         }
       }
     }
@@ -42,7 +44,7 @@ function TotalAuditSum(props) {
   };
   updateTotalSum();
   return (
-        <Card style={{
+        <Card className='total-sum-card' style={{
           color: 'white',
           background: '#3a59fd',
           display: 'flex',
@@ -65,7 +67,7 @@ function TotalAuditSum(props) {
               </Card>
           </div>
           <div className='all-time-disbursement'>
-              <span>All time disbursement</span>
+              <span className='type-name'>All time disbursement</span>
               <Card style={{
                 background: '#3651db',
                 padding: '35px',
@@ -81,4 +83,8 @@ function TotalAuditSum(props) {
   );
 }
 
+TotalAuditSum.propTypes = {
+  getAudits: PropTypes.array.isRequired,
+
+};
 export default TotalAuditSum;

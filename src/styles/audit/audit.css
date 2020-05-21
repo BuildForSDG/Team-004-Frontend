@@ -10,6 +10,7 @@
   width: 48%;
 }
 
+
 .all-time-investment .total-summary {
   padding-top: 20px;
   font-size: 12px;
@@ -23,7 +24,7 @@
 .audit-filter {
   display: flex;
   justify-content: space-between;
-  margin-top: 5px;
+  margin-top: 15px;
   padding-bottom: 20px;
 }
 
@@ -51,3 +52,94 @@
 .audit-transactions .amount {
   color: rgb(18, 61, 18);
 }
+
+.audit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1.8rem;
+  border-radius: 5px;
+  border: 1px solid #e3e3e3;
+  font-size: 0.85rem;
+  color: #5e5e5e;
+  margin-bottom: 1.2rem;
+}
+
+.audit-item .name {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.audit-item .c {
+  width: 20%;
+  text-align: center;
+}
+
+.audit-item .amt {
+  color: #05922d;
+  flex: 1;
+  width: 30%;
+  white-space: nowrap;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 520px) {
+  .audit-item {
+    font-size: 13px;
+  }
+
+  .audit-item .c {
+    margin-left: 20px;
+    width: 20%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .total-sum-card {
+    flex-direction: column !important;
+  }
+
+  .all-time-investment {
+    width: 100%;
+  }
+
+  .all-time-disbursement {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  .audit-filter {
+    flex-direction: column;
+  }
+
+  #dropdown-basic {
+    width: 100%;
+  }
+
+  #dropdown-list-item {
+    width: 100%;
+  }
+
+  .filter-buttons {
+    padding-top: 8px;
+    width: 100%;
+  }
+
+  .filter-btn {
+    width: 100% !important;
+  }
+
+  .filter-btn.clear {
+    margin-top: 8px;
+  }
+}
+

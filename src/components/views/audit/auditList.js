@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import {
   Card, Dropdown, Button
 } from 'react-bootstrap';
+import moment from 'moment';
 import PropTypes from 'prop-types';
 import UserIcon from '../../../static/user.svg';
 
@@ -45,15 +46,15 @@ function AuditFilter(props) {
     <img src={UserIcon} alt='user-icon' style={{ width: '15px', }} />  <span className='filter-name'>{buttonText}</span>
     </Dropdown.Toggle>
 
-    <Dropdown.Menu>
+    <Dropdown.Menu id="dropdown-list-item">
   <Dropdown.Item onClick={filterByAll} >All transactions</Dropdown.Item>
       <Dropdown.Item onClick={filterByDisbursement} >Disbursement</Dropdown.Item>
       <Dropdown.Item onClick={filterByInvestment} >Investment</Dropdown.Item>
     </Dropdown.Menu>
   </Dropdown>
   <div className='filter-buttons'>
-  <Button onClick={filter} variant="primary" style={{ padding: '12px', width: '100px', fontSize: '15px', }}>Filter</Button>{' '}
-  <Button onClick={clearFilter} variant="secondary" style={{
+  <Button onClick={filter} className='filter-btn' variant="primary" style={{ padding: '12px', width: '100px', fontSize: '15px', }}>Filter</Button>{' '}
+  <Button onClick={clearFilter} className='filter-btn clear' variant="secondary" style={{
     padding: '12px',
     width: '100px',
     fontSize: '15px',
@@ -86,50 +87,51 @@ function AuditList(props) {
   let auditContent;
   // eslint-disable-next-line react/prop-types
   emptyChecker(audits[0]);
-  if (audits.loading === true) {
-    console.log('loading');
-  }
   if (isEmpty === false) {
     if (filterName === 'All transactions') {
-      const data = audits[0].map((index) => (
-        <div key={index.name}>
-                                 <Card style={{
-                                    marginTop: '10px',
-                                    padding: '20px',
-                                    display: 'flex',
-                                    justifyContent: 'space-between',
-                                    flexDirection: 'row',
-                                    textAlign: 'left',
-                                  }}>
-                      <span className='name'>{index.name}</span>
-                      <span className='type'>{index.type}</span>
-                      <span className='date'>{index.date}</span>
-                      <span className='amount'>${index.amount}</span>
-                  </Card>
+      const data = audits[0].map((index) => {
+        const date = moment(index.date).format('MMM Do YY');
+        return <div key={index.name}>
+        <div className='audit-item'>
+        <div className='name'>
+            {index.name}
+          </div>
+          <div className='c'>
+            {index.type}
+          </div>
+          <div className='c date'>
+            {date}
+          </div>
+          <div className='amt'>
+            ${index.amount}
+          </div>
         </div>
-      ));
+          </div>;
+      });
       auditContent = data;
     }
     if (filterName !== 'All transactions') {
       const results = audits[0].filter((result) => (
         result.type.includes(filterName)
-      )).map((index) => (
-          <div key={index.name}>
-                       <Card style={{
-                          marginTop: '10px',
-                          padding: '20px',
-                          display: 'flex',
-                          justifyContent: 'space-between',
-                          flexDirection: 'row',
-                          textAlign: 'left',
-                        }}>
-                      <span className='name'>{index.name}</span>
-                      <span className='type'>{index.type}</span>
-                      <span className='date'>{index.date}</span>
-                      <span className='amount'>${index.amount}</span>
-                  </Card>
-              </div>
-      ));
+      )).map((index) => {
+        const date = moment(index.date).format('MMM Do YY');
+        return <div key={index.name}>
+        <div className='audit-item'>
+        <div className='name'>
+            {index.name}
+          </div>
+          <div className='c'>
+            {index.type}
+          </div>
+          <div className='c'>
+            {date}
+          </div>
+          <div className='amt'>
+            ${index.amount}
+          </div>
+        </div>
+          </div>;
+      });
       auditContent = results;
     }
   }
