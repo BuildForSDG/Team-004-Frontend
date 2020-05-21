@@ -1,9 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable comma-dangle */
 import React, { useState } from 'react';
-import {
-  Card, Dropdown, Button
-} from 'react-bootstrap';
+import { Dropdown, Button } from 'react-bootstrap';
 import moment from 'moment';
 import PropTypes from 'prop-types';
 import UserIcon from '../../../static/user.svg';
