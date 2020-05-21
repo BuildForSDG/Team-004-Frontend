@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable comma-dangle */
 import React, { useState } from 'react';
-import { Dropdown, Button } from 'react-bootstrap';
+import { Dropdown } from 'react-bootstrap';
 import moment from 'moment';
 import PropTypes from 'prop-types';
 import UserIcon from '../../../static/user.svg';
@@ -51,15 +51,15 @@ function AuditFilter(props) {
     </Dropdown.Menu>
   </Dropdown>
   <div className='filter-buttons'>
-  <Button onClick={filter} className='filter-btn' variant="primary" style={{ padding: '12px', width: '100px', fontSize: '15px', }}>Filter</Button>{' '}
-  <Button onClick={clearFilter} className='filter-btn clear' variant="secondary" style={{
+  <button onClick={filter} className='filter-btn filter' variant="primary" style={{ padding: '12px', width: '100px', fontSize: '15px', }}>Filter</button>{' '}
+  <button onClick={clearFilter} className='filter-btn clear' variant="secondary" style={{
     padding: '12px',
     width: '100px',
     fontSize: '15px',
     background: 'transparent',
     border: '1px solid #3a59fd',
     color: '#3a59fd',
-  }}>Clear</Button>{' '}
+  }}>Clear</button>{' '}
   </div>
           </div>
           <AuditList filterName = {filterItem} audits = {data} />

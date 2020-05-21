@@ -21,7 +21,6 @@ class Audit extends Component {
 
   render() {
     const { getAudits } = this.props;
-    console.log(getAudits);
     return (
           <div className='audit'>
               <Container>

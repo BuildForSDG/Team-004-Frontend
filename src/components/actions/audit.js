@@ -19,8 +19,7 @@ export const auditFailed = (error) => ({
   }
 });
 
-export const audit = () => (dispatch, getState) => {
-  console.log(getState);
+export const audit = () => (dispatch) => {
   dispatch(auditLoading());
   api.audit.all().then((data) => {
     dispatch(auditLoaded(data));

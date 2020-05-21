@@ -35,10 +35,6 @@
   padding-top: 20px;
 }
 
-.audit-transactions .transaction-date {
-  color: rgb(90, 90, 90);
-}
-
 .audit-transactions .name {
   font-weight: bold;
   font-size: 14px;
@@ -49,7 +45,7 @@
 }
 
 .audit-transactions .amount {
-  color: rgb(18, 61, 18);
+  color: #05922d;
 }
 
 .audit-item {
@@ -100,9 +96,19 @@
   }
 }
 
+.total-sum-card {
+  color: white;
+  background: #3a59fd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 769px) {
   .total-sum-card {
-    flex-direction: column !important;
+    flex-direction: column;
   }
 
   .all-time-investment {
@@ -113,6 +119,12 @@
     width: 100%;
     margin-top: 30px;
   }
+}
+
+.filter-btn.filter {
+  background: #3a59fd;
+  color: white;
+  border: 1px solid #3a59fd;
 }
 
 @media screen and (max-width: 437px) {
@@ -134,7 +146,7 @@
   }
 
   .filter-btn {
-    width: 100% !important;
+    width: 100%;
   }
 
   .filter-btn.clear {
