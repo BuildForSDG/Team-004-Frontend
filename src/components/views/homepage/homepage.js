@@ -30,15 +30,14 @@ class Homepage extends Component {
 <div className="container">
 						<div className="row" data-delay="0" data-disappear="fadeOut">
 							<div className="col-sm-8 col-lg-6">
-								<div className="wfn-feature-side wfn-xs-3x wfn-sm-4x ">
-									<div className="wfn-description wfn-slider">
-                                    <h1>Grow Your SME</h1>
+								<div className=" wfn-xs-3x wfn-sm-4x ">
+									<div className="wfn-description header-text-box wfn-slider">
+                                    <h1>Grow your SME</h1>
                                     <p>Get the funding you need to move your business to the next level</p>
                                     
                                         <div className="wfn-spacer-40"></div>
 										<p>
-											<a href="#" className="btn btn-wfn btn-default btn-lg btnbanner"><i className="fas fa-sign-in-alt"></i> Login</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="#" className="btn btn-wfn btn-default btn-lg btnbanner"><i className="fa fa-user"></i> Sign Up</a>
+											<a href="#" className="btn btn-wfn btn-default btn-lg btnbanner">Get Started Now!</a>
 										</p>
 									</div>
 								</div>
@@ -53,6 +52,7 @@ class Homepage extends Component {
 						</div>
 					</div>
 </div>
+<section className="feature-section">
 <div className="container">
 							<div className="row">
 								<div className="col-md-3 col-sm-6">
@@ -94,6 +94,10 @@ class Homepage extends Component {
 								</div>
 							</div>
 						</div>
+</section>
+
+                     
+                     
                         <div className="container">
                             <section className="how-it-works">
 <h1 className="text-center">How It Works</h1>

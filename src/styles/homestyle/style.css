@@ -17,19 +17,25 @@ body {
     width: 100%;
     left: 0;
     right: 50;
-    z-index: 8;
-  
+    -webkit-box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 999;
+    padding: 15px 0;
+    
+    
 }
 
 .header a {
   float: left;
-  color: black;
   text-align: center;
-  padding: 12px;
+  padding: 8px 15px;
   text-decoration: none !important;
-  font-size: 18px; 
   line-height: 25px;
   border-radius: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #283a5e;
 }
 
 .header a.logo {
@@ -69,6 +75,21 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+.header-text-box {
+  margin-top:150px !important;
+}
+.header-text-box p{
+  color:#fff;
+  font-size: 25px;
+}
+.header-text-box h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size:78px;
+  line-height:78px;
+  font-weight: 900;
+  color:#fff;
+  margin-top:150px;
 }
 .hero-text {
   text-align: left;
@@ -227,9 +248,21 @@ font-family: 'DM Sans', sans-serif;
 }
 
 /* Features area */
-.wfn-feature-side {
+.feature-section{
+  background:#fbf9f8;
+  background-image:url(../img/bg-pattern-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}.feature-box{
+  background-color:#fff;
+}
+.wfn-feature-side{
   margin-top: 21px;
   margin-bottom: 21px;
+  border-radius: 6px;
+  height:100px;
+  -webkit-box-shadow: 0px 20px 64px #97A1B21F;
+  box-shadow: 0px 20px 64px #97A1B21F;
 }
 .wfn-feature-side:before,
 .wfn-feature-side:after {
@@ -251,17 +284,7 @@ font-family: 'DM Sans', sans-serif;
   font-size:20px;
   
 }
-.wfn-slider p{
-  color:#fff;
-}
-.wfn-feature-side .wfn-description h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size:68px;
-  line-height:68px;
-  font-weight: 900;
-  color:#fff;
-  margin-top:150px;
-}
+
 .wfn-feature-side .wfn-description p:last-child {
   margin-bottom: 0px;
 }
@@ -292,6 +315,7 @@ font-family: 'DM Sans', sans-serif;
   text-align: center;
   padding: 20px 40px;
   height: 100%;
+  
 }
 .wfn-feature-box .wfn-description {
   text-align: left;
