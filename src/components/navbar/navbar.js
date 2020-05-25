@@ -25,11 +25,13 @@ function navbar() {
     fontWeight: 'bold',
     fontSize: '13px',
     marginRight: '20px',
-  }}><img src={signInIcon} style={{ width: '16px', marginRight: '5px', }}/> Sign in</Navbar.Text>
+  }}><a href='/#sme-login' style={{
+    textDecoration: 'none',
+  }}><img src={signInIcon} style={{ width: '16px', marginRight: '5px', }}/> Sign in</a></Navbar.Text>
     <Button style={{
       fontSize: '13px',
       fontWeight: 'bold',
-    }} href="/#audit">Audit</Button>
+    }} href="/#audits">Audit</Button>
   </Navbar.Collapse>
   </Navbar>
     </Container>
