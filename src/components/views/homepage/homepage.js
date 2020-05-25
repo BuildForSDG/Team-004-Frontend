@@ -1,7 +1,7 @@
 /* eslint-disable comma-dangle */
 /* eslint-disable class-methods-use-this */
 import React, { Component } from 'react';
-import { Container, Button, Card } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import '../../../styles/homepage/homepage.css';
 import tick from '../../../static/tick.svg';
 import chart from '../../../static/chart.svg';
@@ -29,32 +29,19 @@ export default Homepage;
 
 function Header() {
   return (
-<Container>
-<div className='header'>
-   <div className='header-text'>
-      <div className='text-header'>
-         <h1>A better way to <br /> build and grow your <span className='sme-span'>SME.</span></h1>
-      </div>
-      <div className='text-details'>
-         <span>Get the funding you need to move your business to the next level and keep shipping</span>
-      </div>
-      <div className='cta'>
-         <Button style={{
-            padding: '9px',
-            fontWeight: 'bold',
-            fontSize: '14px',
-            minWidth: '120px',
-            background: '#3a59fd',
-          }}>Get started</Button>
-         <Button style={{
-            padding: '9px',
-            background: 'transparent',
-            marginLeft: '10px',
-            fontWeight: 'bold',
-            fontSize: '14px',
-            minWidth: '120px',
-            color: '#2e2e2e',
-          }}>View audits</Button>
+    <Container>
+      <div className='header'>
+        <div className='header-text'>
+          <div className='text-header'>
+            <h1>A better way to <br /> build and grow your <span className='sme-span'>SME.</span></h1>
+          </div>
+          <div className='text-details'>
+  <span>Get the funding you need to move your business
+     to the next level and keep shipping</span>
+          </div>
+        <div className='cta'>
+          <button>Get started</button>
+          <button className='transparent'>View audits</button>
       </div>
    </div>
    <div className='header-img'>
@@ -82,23 +69,32 @@ function SectionOne() {
         <div className='first-section-card'>
           <img src={chart} />
           <h3>High yield investment</h3>
-          <span>
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-          </span>
+          <span>It has survived not only
+            five centuries,but also the leap
+            into electronic typesetting, remaining
+            essentially unchanged. It was popularised
+            in the 1960s with the release of Letraset
+             sheets containing Lorem</span>
         </div>
         <div className='first-section-card'>
           <img src={empower} />
           <h3>Sme Empowerment</h3>
-          <span>
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-          </span>
+          <span>It has survived not only
+            five centuries,but also the leap
+            into electronic typesetting, remaining
+            essentially unchanged. It was popularised
+            in the 1960s with the release of Letraset
+             sheets containing Lorem</span>
         </div>
         <div className='first-section-card'>
           <img src={job} />
           <h3>Battling Unemployment</h3>
-          <span>
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-          </span>
+          <span>It has survived not only
+            five centuries,but also the leap
+            into electronic typesetting, remaining
+            essentially unchanged. It was popularised
+            in the 1960s with the release of Letraset
+             sheets containing Lorem</span>
         </div>
       </div>
       </Container>

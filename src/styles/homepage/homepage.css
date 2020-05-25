@@ -31,6 +31,19 @@
   color: #a1a1a1;
 }
 
+.cta {
+  padding: 9px;
+  font-weight: bold;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+.cta .transparent {
+  background: transparent;
+  margin-left: 10px;
+  color: #2e2e2e;
+}
+
 .header-text .cta {
   padding-top: 30px;
   font-size: 14px;
