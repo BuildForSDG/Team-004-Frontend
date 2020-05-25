@@ -31,17 +31,22 @@
   color: #a1a1a1;
 }
 
-.cta {
+.cta button {
+  background: #3a59fd;
   padding: 9px;
+  min-width: 120px;
   font-weight: bold;
   font-size: 14px;
-  min-width: 120px;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 
 .cta .transparent {
   background: transparent;
   margin-left: 10px;
   color: #2e2e2e;
+  border: 1px solid rgb(197, 197, 197);
 }
 
 .header-text .cta {
