@@ -7,11 +7,17 @@ import Transaction from './transactions';
 import Investors from './investors';
 import Tasks from './currentTasks';
 import equity from '../../../../static/equity.svg';
+import Sidebar from '../../../navbar/sidenav';
 
 class Sme extends Component {
   render() {
     this.name = 'sme';
     return (
+          <>
+            <div className='sidenav'>
+              <Sidebar />
+            </div>
+            <div className='content'>
             <div className='dashboard'>
               <div className='col-one'>
               <TaskOverview />
@@ -30,6 +36,8 @@ class Sme extends Component {
                 </div>
               </div>
             </div>
+            </div>
+          </>
     );
   }
 }

@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Montserrat&family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.investor-dashboard {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+}
+
+.investor-dashboard > .side-nav {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 0;
+}
+
+.user-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.user-section > .avatar {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.feed-image > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.user-section > .avatar img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.side-nav > .nav {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 3rem;
+  width: 90%;
+  padding: 1rem 2rem;
+}
+
+.side-nav > .nav > li {
+  padding: 1rem 0;
+}
+
+.side-nav > .nav > li > a {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.investor-dashboard > .main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  right: 5rem;
+}
+
+/* .investor-dashboard > .main > .top-widget-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+
+.top-widget {
+  width: 15rem;
+  margin: 1rem;
+  height: 15rem;
+  text-align: center;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.top-widget:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.top-widget > h2 {
+  color: white;
+  background: blue;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+.top-widget > .bold > h3 {
+  font-weight: 600;
+  padding: 1rem 0;
+  font-size: 3rem;
+}
+
+.top-widget > p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.overview-container {
+  margin: 3rem auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.investment-feed {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgb(209, 209, 209);
+  margin-top: 0.9rem;
+}
+
+.investment-feed h2 {
+  padding: 2rem 0;
+  border-bottom: 1px solid rgb(209, 209, 209);
+  width: 100%;
+  text-align: center;
+  color: rgb(136, 136, 136);
+}
+
+.feed-widget {
+  width: 100%;
+}
+
+.feed-containers {
+  display: flex;
+  padding: 1rem;
+  height: 12rem;
+  margin: 1rem auto;
+  width: 98%;
+}
+
+.feed-containers:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.feed-image {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 5px;
+  margin-right: 2rem;
+}
+
+.dots {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.feed-details {
+  width: 60%;
+}
+
+.feed-details > p {
+  font-size: 1.3rem;
+}
+
+.feed-footer {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #d8d8d8;
+  padding-top: 1rem;
+}
+
+.feed-preview {
+  border: 1px solid #d8d8d8;
+  background: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  color: blue;
+  margin-right: 2rem;
+}
+
+.Invested {
+  background-color: #d8d8d8;
+  cursor: not-allowed;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+}
+
+.Invest {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+}
+
+.Invest:hover {
+  color: blue;
+  background-color: white;
+  border: 1px solid blue;
+}
+
+.feed-milestones {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.milestone-item-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.milestone-item-container > div {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0.2rem;
+}
+
+.milestone-item-container > div > p {
+  padding: 0;
+  margin: 0;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  margin-top: -0.2rem;
+  color: rgb(136, 136, 136);
+}
+
+.green {
+  background: green;
+}
+
+.black {
+  background: black;
+}
+
+.gray {
+  background: gray;
+}
+
+.orange {
+  background: orange;
+}
+
+.blue {
+  background: blue;
+}
+
+/* NAVIGATION FOR FEEDS */
+.footer-nav {
+  width: 100%;
+  padding: 1rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.active {
+  background: blue;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  font-weight: 300;
+  margin-right: 1rem;
+}
+
+.inactive {
+  border: 1px solid  blue;
+  color: blue;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  font-weight: 300;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.inactive:hover {
+  background: blue;
+  color: white;
+}
+
+.slick-next::before,
+.slick-prev::before {
+  font-size: 3rem;
+  line-height: 1;
+  opacity: 0.75;
+  color: #858383;
+}
