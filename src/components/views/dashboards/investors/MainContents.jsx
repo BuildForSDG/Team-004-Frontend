@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Slider from "react-slick";
+import Slider from 'react-slick';
 import TopWidgets from './widgets/topWidgets.jsx';
 import Feeds from './widgets/investmentFeeds.jsx';
 import thumb from '../../../../static/wefinance-logo.png';
@@ -129,7 +129,6 @@ class MainContent extends Component {
 
     return (
       <div className="main">
-        
         <div className="top-widget-container">
           <Slider {...settings}>
            {details.map((detail, i) => <TopWidgets
