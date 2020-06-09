@@ -1,5 +1,9 @@
 .audit {
-  padding-top: 50px;
+  padding-top: 0;
+}
+
+.transaction {
+  margin-top: -20px;
 }
 
 .all-time-investment {
