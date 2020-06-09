@@ -3,6 +3,7 @@ import SideNav from './components/navbar/sidenav';
 import Navbar from './components/navbar/navbar';
 import AuthRoutes from './components/routes/afterAuth';
 import NotAuthRoutes from './components/routes/beforeAuth';
+import Footer from './components/footer/footer';
 import './app.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     checkAuth = <div>
       <Navbar />
       <NotAuthRoutes />
+      <Footer />
     </div>;
   }
   return (

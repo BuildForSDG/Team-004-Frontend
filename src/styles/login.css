@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Montserrat&family=Roboto&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.landing {
+  font-size: 10px;
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+}
+
+.auth-right {
+  font-family: 'Oxygen', sans-serif;
+  width: 40%;
+}
+
+.auth-left {
+  width: 60%;
+}
+
+.login-wrapper {
+  padding-left: 20px;
+  padding-top: 8rem;
+}
+
+.login-wrapper.signup-wrapper {
+  padding-top: 2rem;
+}
+
+.login-form-header > h1 {
+  font-size: 25px;
+  color: #0080ff;
+}
+
+.login-form-header > h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.login-sidbar {
+  background: #3a59fd;
+  position: absolute;
+  margin-left: 80px;
+  margin-top: -76px;
+  height: 100vh;
+  align-items: center;
+}
+
+.login-sidbar > .sidebar-heading > h1 {
+  padding-top: 50px;
+  text-align: left;
+  color: white;
+  max-width: 90%;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 4rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  letter-spacing: 0.3rem;
+}
+
+.login-sidbar > .sidebar-heading > h2 {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4rem;
+  line-height: 4.7rem;
+  margin: 2rem auto;
+}
+
+.form-group > label {
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
+
+.form-group .form-control {
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.login-wrapper .btn-primary {
+  margin-top: 20px;
+  background: #3a59fd;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  padding: 8px;
+}
+
+.login-wrapper > .field-footer h4 {
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.blue-span {
+  color: #000;
+}
+
+.login-sidbar .sidebar-heading {
+  text-align: center;
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+.step-text {
+  max-width: 80%;
+  text-align: center;
+  padding-left: 100px;
+  font-size: 1.4rem;
+}
+
+.step-text p {
+  color: rgb(255, 255, 255);
+}
+
+.step-text > h3 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: #0000;
+}
+
+.green-span::before {
+  color: #000;
+  content: '';
+  animation: animate infinite 10s;
+}
+
+@keyframes animate {
+  0% {
+    content: 'Connect';
+  }
+
+  20% {
+    content: 'Survive';
+  }
+
+  40% {
+    content: 'Grow';
+  }
+
+  60% {
+    content: 'Succeed';
+  }
+
+  80% {
+    content: 'Mature';
+  }
+
+  100% {
+    content: 'Connect';
+  }
+}
+
+.signup-sub {
+  padding: 0;
+  padding-bottom: 0;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 425px) {
+  .landing {
+    flex-direction: column-reverse;
+  }
+
+  .login-sidbar > .sidebar-heading > h1 {
+    padding: 0;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .login-sidbar > .sidebar-heading {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .sidebar-step-items {
+    text-align: center;
+    margin-left: 200px;
+  }
+
+  .step-text > h3 {
+    letter-spacing: 1;
+  }
+
+  .step-svg {
+    display: none;
+  }
+
+  .form-group > label {
+    font-size: 1.5rem;
+  }
+
+  .form-group .form-control {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing {
+    flex-direction: column-reverse;
+  }
+}

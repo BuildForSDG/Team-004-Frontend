@@ -44,15 +44,7 @@ function TotalAuditSum(props) {
   };
   updateTotalSum();
   return (
-        <Card className='total-sum-card' style={{
-          color: 'white',
-          background: '#3a59fd',
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          padding: '30px',
-          borderRadius: '5px',
-        }}>
+        <div className='total-sum-card'>
           <div className='all-time-investment'>
               <span>All time investment</span>
               <Card style={{
@@ -79,7 +71,7 @@ function TotalAuditSum(props) {
               </Card>
           </div>
 
-        </Card>
+        </div>
   );
 }
 

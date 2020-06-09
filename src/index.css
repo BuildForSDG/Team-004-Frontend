@@ -7,6 +7,11 @@ body {
   font-size: 80%;
 }
 
-* {
-  font-size: 102%;
+.dropdown-toggle {
+  font-size: 10px;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  color: black;
+  border: 1px solid rgb(112, 112, 112);
+  width: 100%;
 }
