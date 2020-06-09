@@ -20,7 +20,7 @@ function ProjectList(props) {
                 <td>in progress</td>
           <td>{index.deadline}</td>
           <td>
-          <DropdownButton id="dropdown-basic-button" className='project-edit'>
+          <DropdownButton className='project-edit'>
           <Dropdown.Item href="#/action-1">Edit</Dropdown.Item>
           <Dropdown.Item onClick={() => setModalShow(true)}>
                   View

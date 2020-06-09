@@ -31,21 +31,12 @@ th {
   padding-top: 10px;
 }
 
-.dropdown-toggle {
-  background: rgb(255, 255, 255) !important;
-  text-align: center;
-  color: black !important;
-  border: 1px solid rgb(112, 112, 112) !important;
-  margin-top: 10px;
-  width: 100%;
-}
-
 .dropdown-menu {
   width: 100%;
 }
 
 .add-project-btn {
-  background: '#3a59fd' !important;
+  background: '#3a59fd';
   position: absolute;
   top: 91%;
   margin-left: 77%;
