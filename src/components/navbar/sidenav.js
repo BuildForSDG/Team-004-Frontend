@@ -35,7 +35,7 @@ const SideNav = () => (
             </li>
             <li className='route'>
                 <div className='routes'>
-                  <img className='icon' src={project} alt='project-icon' /><span className='name'>Projects</span>
+                    <Link to='/projects'>                  <img className='icon' src={project} alt='project-icon' /><span className='name'>Projects</span></Link>
                 </div>
             </li>
             <li className='route'>
