@@ -33,6 +33,7 @@ class Login extends Component {
         </form>
         <div className='field-footer'>
             <h4>Forgot Password?</h4>
+
             <h4>Don&apos;t Have an account? <Link to={{ pathname: '/sme-signup' }} className='blue-span'> Sign Up </Link> </h4>
         </div>
         </div>

@@ -16,6 +16,7 @@ function smeRoutes() {
         <Route path='/investors-signup' exact component={InvestorsSignup} />
         <Route path='/investors-login' exact component={InvestorsLogin} />
         <Route path='/audits' exact component={Audit}></Route>
+
     </Switch>
   );
 }

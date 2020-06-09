@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Montserrat&family=Roboto&display=swap');
 
@@ -122,6 +123,7 @@ html {
 
 .step-text p {
   color: rgb(255, 255, 255);
+
 }
 
 .step-text > h3 {

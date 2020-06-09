@@ -25,6 +25,7 @@ class LoginLanding extends Component {
                   </div>
         </div>
       </Container>
+
     );
   }
 }
