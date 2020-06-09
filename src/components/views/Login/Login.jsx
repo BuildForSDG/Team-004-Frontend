@@ -19,7 +19,6 @@ class Login extends Component {
         <div className="login-wrapper">
           <form action="">
             <div className='login-form-header'>
-              <h1>{this.props.header}</h1>
               <h2>{this.props.subHeader}</h2>
             </div>
                 {fields.map((field, i) => <Field
@@ -30,11 +29,11 @@ class Login extends Component {
                         />)}
                         <div className="form-group">
                           <button type="submit" className='btn-primary'>Login</button>
-
                         </div>
         </form>
-        <div className='footer'>
-            <h4>Forgot Password</h4>
+        <div className='field-footer'>
+            <h4>Forgot Password?</h4>
+
             <h4>Don&apos;t Have an account? <Link to={{ pathname: '/sme-signup' }} className='blue-span'> Sign Up </Link> </h4>
         </div>
         </div>

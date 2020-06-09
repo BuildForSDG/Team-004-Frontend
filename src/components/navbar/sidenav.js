@@ -30,12 +30,12 @@ const SideNav = () => (
             </li>
             <li className='route'>
                 <div className='routes'>
-                  <img className='icon' src={statistic} alt='budget-icon' /><span className='name'>Budgets</span>
+                <Link to='/transactions'> <img className='icon' src={statistic} alt='budget-icon' /><span className='name'>Transactions</span> </Link>
                 </div>
             </li>
             <li className='route'>
                 <div className='routes'>
-                  <img className='icon' src={project} alt='project-icon' /><span className='name'>Projects</span>
+                    <Link to='/projects'>                  <img className='icon' src={project} alt='project-icon' /><span className='name'>Projects</span></Link>
                 </div>
             </li>
             <li className='route'>

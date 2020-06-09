@@ -38,7 +38,7 @@ class Signup extends Component {
 
                         </div>
         </form>
-        <div className='footer'>
+        <div className='field-footer'>
             <h4>Already Have an account? <Link to={{ pathname: '/investors-login' }} className='blue-span'> Login </Link> </h4>
         </div>
         </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Container } from 'react-bootstrap';
 import Login from './Login.jsx';
 import LoginSideBar from '../../common/LoginSidebar.jsx';
 import '../../../styles/login.css';
@@ -8,16 +9,23 @@ class LoginLanding extends Component {
     this.a = 'Hello';
 
     return (
-        <div className='landing'>
-            <Login
+      <Container>
+                <div className='landing'>
+                  <diiv className='auth-right'>
+                  <Login
               // header='BuildForSDG'
               subHeader="SME Login Page"
             />
-            <LoginSideBar
+                  </diiv>
+                  <div className='auth-left'>
+                  <LoginSideBar
                 heading="Let’s Help your Business"
 
             />
+                  </div>
         </div>
+      </Container>
+
     );
   }
 }

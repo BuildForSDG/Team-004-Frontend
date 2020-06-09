@@ -1,60 +1,70 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Montserrat&family=Roboto&display=swap');
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 .landing {
-  width: 95%;
-  margin: 0 auto;
+  font-size: 10px;
+  width: 100%;
+  padding-top: 20px;
   display: flex;
-  justify-content: center;
+}
+
+.auth-right {
+  font-family: 'Oxygen', sans-serif;
+  width: 40%;
+}
+
+.auth-left {
+  width: 60%;
+}
+
+.login-wrapper {
+  padding-left: 20px;
+  padding-top: 8rem;
+}
+
+.login-wrapper.signup-wrapper {
+  padding-top: 2rem;
+}
+
+.login-form-header > h1 {
+  font-size: 25px;
+  color: #0080ff;
+}
+
+.login-form-header > h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.login-sidbar {
+  background: #3a59fd;
+  position: absolute;
+  margin-left: 80px;
+  margin-top: -76px;
+  height: 100vh;
   align-items: center;
-  flex-direction: row;
-  padding: 2rem;
-}
-
-.landing > .login-wrapper {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  border-radius: 0.5rem;
-  font-family: 'Montserrat', sans-serif;
-  height: 100%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-.landing > .login-sidbar {
-  flex: 2;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  height: 90vh;
 }
 
 .login-sidbar > .sidebar-heading > h1 {
-  font-family: 'Gothic A1', sans-serif;
+  padding-top: 50px;
+  text-align: left;
+  color: white;
+  max-width: 90%;
   font-weight: 600;
-  font-size: 6rem;
-  line-height: 8rem;
+  font-size: 50px;
+  line-height: 4rem;
   padding-right: 3rem;
   padding-left: 3rem;
   letter-spacing: 0.3rem;
 }
 
 .login-sidbar > .sidebar-heading > h2 {
+  color: black;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -63,103 +73,57 @@ html {
   margin: 2rem auto;
 }
 
-.landing > .login-wrapper > form > .login-form-header > h1 {
-  font-size: 6rem;
-  color: #0080ff;
-}
-
-.landing > .login-wrapper > form > .login-form-header > h2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  padding: 1rem;
-  margin: 3rem 2rem;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin: 1rem auto;
-  width: 90%;
-}
-
 .form-group > label {
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 500;
-  padding-bottom: 1rem;
-  padding-top: 2.5rem;
+  padding-bottom: 5px;
+  padding-top: 20px;
 }
 
 .form-group .form-control {
-  font-size: 1.6rem;
-  padding: 1.5rem 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  font-size: 18px;
   border: none;
+  border-bottom: 1px solid rgb(214, 214, 214);
 }
 
-.btn-primary {
+.login-wrapper .btn-primary {
+  margin-top: 20px;
+  background: #3a59fd;
+  border: none;
+  border-radius: 5px;
   color: white;
-  font-size: 2rem;
-  padding: 1rem;
-  cursor: pointer;
-  background: #0080ff;
-  border: none;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  border-radius: 0.5rem;
-  font-weight: 600;
-  margin-top: 3rem;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  padding: 8px;
 }
 
-.btn-primary:hover {
-  background: white;
-  color: #0080ff;
-  transition: 0.5s;
-}
-
-.login-wrapper > .footer h4 {
-  font-size: 1.6rem;
-  font-weight: 200;
-  padding-top: 1rem;
-  margin-bottom: 3rem;
+.login-wrapper > .field-footer h4 {
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .blue-span {
-  color: #0080ff;
-  font-weight: 500;
+  color: #000;
 }
 
-.login-sidbar > .sidebar-heading {
-  margin: 0 4rem;
-  width: 100%;
-}
-
-.sidebar-step-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.step-number {
-  font-size: 12rem;
-  color: rgba(0, 0, 0, 0.1);
-  margin: 1rem;
+.login-sidbar .sidebar-heading {
+  text-align: center;
+  padding-top: 100px;
+  padding-left: 100px;
 }
 
 .step-text {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: center;
+  max-width: 80%;
+  text-align: center;
+  padding-left: 100px;
   font-size: 1.4rem;
-  font-family: "Roboto", sans-serif;
-  flex: 1;
 }
 
 .step-text p {
-  color: gray;
+  color: rgb(255, 255, 255);
+
 }
 
 .step-text > h3 {
@@ -170,19 +134,8 @@ html {
   color: #0000;
 }
 
-.step-svg {
-  display: flex;
-  flex: 1;
-  height: 17rem;
-  width: 30rem;
-}
-
-.step-svg img {
-  width: 100%;
-}
-
 .green-span::before {
-  color: #0080ff;
+  color: #000;
   content: '';
   animation: animate infinite 10s;
 }
@@ -238,16 +191,8 @@ html {
   }
 
   .sidebar-step-items {
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
-    margin-top: 2rem;
-    background-image: url('../images/bgsvg.svg');
-    margin-bottom: 2rem;
-  }
-
-  .step-text {
-    text-align: left;
+    text-align: center;
+    margin-left: 200px;
   }
 
   .step-text > h3 {

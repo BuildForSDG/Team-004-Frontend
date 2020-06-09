@@ -32,7 +32,7 @@ class Login extends Component {
 
                         </div>
         </form>
-        <div className='footer'>
+        <div className='field-footer'>
             <h4>Forgot Password</h4>
             <h4>Dont Have an account? <Link to={{ pathname: '/investors-signup' }} className='blue-span'> Sign Up </Link> </h4>
         </div>

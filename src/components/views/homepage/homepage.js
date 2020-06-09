@@ -40,8 +40,8 @@ function Header() {
      to the next level and keep shipping</span>
           </div>
         <div className='cta'>
-          <button>Get started</button>
-          <button className='transparent'>View audits</button>
+          <a href="/#investors-signup"><button>Get started</button></a>
+          <a href="/#audits"><button className='transparent'>View audits</button></a>
       </div>
    </div>
    <div className='header-img'>

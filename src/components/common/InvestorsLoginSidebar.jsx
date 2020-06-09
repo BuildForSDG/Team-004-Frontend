@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+<<<<<<< develop
+=======
 import step1img from '../../images/steps (6).svg';
+>>>>>>> develop
 
 class LoginSideBar extends Component {
   // Component Contains Login SideBar
@@ -19,9 +22,12 @@ class LoginSideBar extends Component {
                             <span className="blue-span">BuildForSDG</span> Connects you with the right SMEs that you can invest your money without fear of losing it all yet getting maximum returns.
                           </p>
                       </div>
+<<<<<<< develop
+=======
                       <div className="step-svg">
                          <img src={step1img} alt="step1"/>
                       </div>
+>>>>>>> develop
                   </div>
               </div>
             </div>
